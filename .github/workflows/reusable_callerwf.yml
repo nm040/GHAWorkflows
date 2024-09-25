@@ -12,12 +12,11 @@ on:
         type: string
 
 jobs:
-
   Caller_workflow_1:
-    uses: RajendraGithub7/GHAReusable/.github/workflows/reusable_workflow.yml
+    uses: RajendraGithub7/GHAReusable/.github/workflows/reusable_workflow.yml@main
     with:
       firstName: ${{ inputs.firstName }}
   Caller_workflow_2:
-    uses: RajendraGithub7/GHAReusable/.github/workflows/reusable_workflow.yml
+    uses: RajendraGithub7/GHAReusable/.github/workflows/reusable_workflow.yml@main
     with:
       secondName: ${{ inputs.secondName }}
