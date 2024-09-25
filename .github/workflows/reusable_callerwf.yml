@@ -1,0 +1,23 @@
+name: Caller_workflow
+on:
+  workflow_dispatch:
+    inputs:
+      firstName:
+        default: 'Firstcall'
+        required: true
+        type: string
+      secondName:
+        default: 'Secondcall'
+        required: true
+        type: string
+
+jobs:
+
+  Caller_workflow_1:
+    uses: RajendraGithub7/GHAReusable/.github/workflows/reusable_workflow.yml
+    with:
+      firstName: ${{ inputs.firstName }}
+  Caller_workflow_2:
+    uses: RajendraGithub7/GHAReusable/.github/workflows/reusable_workflow.yml
+    with:
+      secondName: ${{ inputs.secondName }}
