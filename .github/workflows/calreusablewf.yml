@@ -1,4 +1,4 @@
-name: testreusbalewf
+name: reusableworkflow
 on:
   workflow_dispatch:
     inputs:
