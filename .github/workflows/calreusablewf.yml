@@ -1,0 +1,19 @@
+name: Reusable_Workflow
+on:
+  workflow_dispatch:
+    inputs:
+      firstName:
+        description: 'Name of the First person'
+        default: 'Matt'
+        required: true
+        type: string
+jobs:
+  caller_workflow_job_1:    
+    uses: RajendraGithub7/GHAWorkflows/.github/workflows/reusablewf.yml
+    with:
+      firstName: ${{ inputs.firstName }}
+
+  caller_workflow_job_2:
+    uses: RajendraGithub7/GHAWorkflows/.github/workflows/reusablewf.yml
+    with:
+      firstName: ${{ inputs.firstName }}
