@@ -9,8 +9,7 @@ on:
         type: string
 jobs:
   caller_workflow_job_1:    
-    uses: RajendraGithub7/GHAWorkflows/.github/workflows/reusablewf.yml@main
-          
+    uses: RajendraGithub7/GHAWorkflows/.github/workflows/reusablewf.yml@main          
     with:
       firstName: ${{ inputs.firstName }}
 
