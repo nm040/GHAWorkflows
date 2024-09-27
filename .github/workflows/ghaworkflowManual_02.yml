@@ -18,4 +18,5 @@ jobs:
     - name: Send greeting
       run: |
          echo "Hello ${{ inputs.firstName }}"
+         sleep 20
          echo "Hello ${{ inputs.secondName }}"
