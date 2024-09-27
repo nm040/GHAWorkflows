@@ -12,7 +12,8 @@ on:
         type: string
 jobs:
   ManualInput:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: gharunner
     steps:
     - name: Send greeting
       run: |
